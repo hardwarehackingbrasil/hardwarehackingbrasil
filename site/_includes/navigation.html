@@ -1,0 +1,48 @@
+
+<BR/>
+<ul class="language-bar">
+  {% capture enuslink %}{{ site.baseurl_root }}/en{{ page.url }}{% endcapture %}
+  {% capture ptbrlink %}{{ page.url }}{% endcapture %}
+  <a class="link-pt flag-icon flag-icon-us" href="{{ enuslink }}"></a>
+  <a class="link-en flag-icon flag-icon-br" href="{{ ptbrlink }}"></a>
+</ul>
+<nav class="nav">
+  <div class="nav-container" style="min-height: 16px">
+    <ul class="navul">
+      <li><a href="{{ site.baseurl }}/">Home</a></li>
+    {% if site.lang == "pt" %}
+      <li><a href="/about">{% t global.about %}</a></li>
+    {% else %}
+      <li><a href="/{{ site.lang }}/about">{% t global.about %}</a></li>
+    {% endif %}
+    </ul>
+  </div>
+</nav>
+<div class="social-icon">
+  <ul>
+    <li class="btn-a btn-svg btn-telegram">
+      <a href="https://t.me/hardwareHackingBrasil">
+        {% include social/telegram.svg %}
+        Hardware Hacking Brasil
+      </a>
+    </li>
+    <li class="btn-a btn-svg btn-telegram">
+      <a href="https://t.me/h2hconference">
+        {% include social/telegram.svg %}
+        H2HC
+      </a>
+    </li>
+    <li class="btn-a btn-svg btn-telegram">
+      <a href="https://t.me/grupodosuportetecnico">
+        {% include social/telegram.svg %}
+        Suporte Técnico
+      </a>
+    </li>
+
+
+  </ul>
+</div>
+<div class="search-input">
+  <input type="text" id="search-input" style="margin: 0 auto;" placeholder="{% t global.search-posts %}">
+</div>
+<ul id="results-container" class="results-container"></ul>

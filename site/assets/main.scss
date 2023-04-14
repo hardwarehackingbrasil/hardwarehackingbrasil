@@ -1,0 +1,368 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import 'tale';
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700");
+
+
+:root {
+  --base-color: #00ff00;
+  --border: dashed 1px rgba(0, 255, 0, 0.9);
+  --selection-background: rgba(0, 255, 0, 0.99);
+  --selection-text: #000;
+  --background-color: #000;
+  --code-background-color: #222;
+  --text-color: var(--base-color);
+  --placeholder-color: var(--base-color);
+  --link-color: var(--base-color);
+  --code-color-1: #aaaaaa;
+  --code-color-2: #ffffcc;
+  --code-color-3: #F00000;
+  --code-color-4: #F0A0A0;
+  --code-color-5: #b38aff;
+  --code-color-6: #5ba711;
+  --code-color-7: #e4e477;
+  --code-color-8: #000080;
+  --code-color-9: #05ca05;
+  --code-color-10: #888888;
+  --code-color-11: #555555;
+  --code-color-12: #800080;
+  --code-color-13: #00d4d4;
+  --code-color-14: #00c1c1;
+  --code-color-15: #ed9d13;
+  --code-color-16: #1e90ff;
+  --code-color-17: #800000;
+  --code-color-18: #bbbbbb
+}
+
+body {
+
+  background-image: url("/assets/bg1.jpg");
+  background-position: left top;
+  background-size: auto;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-color: var(--background-color);
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Source Code Pro", monospace;
+  font-size: 12.5px;
+  color: var(--text-color);
+  text-align: left;
+  line-height: 1.5 !important
+}
+
+body .site {
+  background-color: var(--background-color);
+  padding: 0 40px;
+  padding: 0 2.857142857rem;
+  margin-top: 48px;
+  margin-top: 3.428571429rem;
+  margin-bottom: 48px;
+  margin-bottom: 3.428571429rem;
+  color: var(--text-color);
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+}
+
+body .nav {
+  color: var(--text-color);
+  width: 100%;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+}
+
+.navul li a {
+  color: var(--text-color);
+}
+
+.post-title {
+  color: var(--text-color);
+}
+.catalogue-title {
+  color: var(--text-color);
+}
+
+.highlight {
+  background-color: var(--code-background-color);
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+}
+
+body .topbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 32px;
+  text-align: center;
+  -webkit-box-shadow: 0px 10px 16px -9px rgba(0,0,0,0.7);
+  -moz-box-shadow: 0px 10px 16px -9px rgba(0,0,0,0.7);
+  box-shadow: 0px 10px 16px -9px rgba(0,0,0,0.7);
+}
+
+.like-box {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  @media (max-width: 700px) {
+    right: 5px;
+    bottom: 5px;
+  }
+}
+
+.post-image {
+  max-height: 400px;
+}
+
+.search-input {
+  display: flex;
+  align-content: right;
+  width: 100%;
+  height: 20px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.results-container {
+  margin: 0 0 0 0;
+  min-height: 0px;
+  padding: 0 0 0 0;
+}
+
+.navul {
+  width: 100%;
+}
+
+/* Share buttons */
+.sharebuttons {
+  width: 300px;
+  margin: 0 auto 0 auto;
+}
+
+.sharebuttons ul {
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+
+.sharebuttons ul li {
+  display: inline;
+}
+
+.sharebuttons ul li a {
+  text-decoration: none;
+}
+
+.sharebuttons ul li svg {
+  width: 40px;
+  height: 40px;
+}
+
+.sharebuttons .reddit svg {
+  fill: #FF4500;
+}
+
+.sharebuttons .hn svg {
+  fill: #F0652F;
+}
+
+.sharebuttons .twitter svg {
+  fill: #1DA1F2;
+}
+
+.sharebuttons .youtube svg {
+  fill: #1DA1F2;
+}
+
+/* Social Network Icons */
+.social-icon {
+  margin: 0 auto 0 auto;
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,0.2);
+  padding-bottom: 15px;
+}
+
+.social-icon ul li {
+  display: inline;
+  padding-left: 8px;
+  padding-right: 8px;
+  vertical-align: middle;
+  line-height: 20px;
+}
+
+.social-icon ul {
+  margin: 20px 0 0 0;
+  padding: 0 0 0 0;
+  text-align: center;
+}
+
+.social-icon ul li svg {
+  width: 20px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.social-icon ul li a {
+  text-decoration: none;
+}
+
+.btn-svg svg {
+  margin-top: -2.5px;
+  fill: #FFFFFF;
+}
+
+.btn-a a {
+  color: #FFFFFF;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+}
+
+.btn-reddit a {
+  background-color: #FF4500;
+}
+
+.btn-twitter a {
+  background-color: #1DA1F2;
+}
+
+.btn-linkedin a {
+  background-color: #0077B5;
+}
+
+.btn-linkedin a {
+  background-color: #0077B5;
+}
+
+.btn-facebook a {
+  background-color: #4172B8;
+}
+
+.btn-instagram a {
+  background-color: #E4405F
+}
+
+.btn-github a {
+  background-color: #181717
+}
+
+.btn-patreon a {
+  background-color: #FF424D;
+}
+
+.btn-youtube a {
+  background-color: #FF0000
+}
+
+.btn-twitch a {
+  background-color: #9146FF;
+}
+
+.btn-code-stats a {
+  background-color: #181717;
+}
+
+.btn-telegram a {
+  background-color: #2CA5E0;
+}
+
+.site-build {
+  font-size: 10px;
+  color: #AAAAAA;
+  height: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.language-bar {
+  width: 100px;
+  margin: -40px 0 0 auto;
+  height: 32px;
+}
+
+
+.twitch-embed {
+  width: 100%;
+}
+
+.post-image-div {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+}
+
+.post-image-2 {
+  margin: 0 auto;
+}
+
+.catalogue-item-2 {
+  width: 100%;
+}
+
+div.truth-table-holder {
+  width: 100%;
+    display: flex;
+}
+
+div.truth-table-container {
+  flex-grow: 1;
+}
+
+/* Truth Table */
+table.truth {
+  border-collapse:collapse;
+  margin:0 auto;
+}
+
+table.truth th {
+  border-bottom:1px solid black;
+  text-align: center;
+  padding:.4em;
+  font-weight: normal;
+}
+
+table.truth td {
+  border:0;
+  padding:.4em;
+  text-align: center;
+}
+
+table.truth .dv {
+  border-right:1px solid black;
+}
+
+table.truth .mc {
+  color:red;
+}
+table.truth .tv {
+  color:green;
+  font-weight: bold;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0)
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg)
+  }
+  40%,
+  80% {
+    transform: rotate(10deg)
+  }
+}
+
+.latex svg {
+  max-width: 100%
+}

@@ -1,0 +1,27 @@
+<footer>
+    <span>
+      &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}. Made with Jekyll using the <a href="https://github.com/chesterhow/tale/">Tale</a> theme.
+    </span><BR/>
+    <span class="site-build">
+      Last build: {{ site.time }}
+    </span>
+  </footer>
+
+  <script src="/assets/simple-jekyll-search.min.js"></script>
+  <script>
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '/search.json',
+      searchResultTemplate: '<li><a href="{{ site.url }}{url}">{date} - {title}</a></li>'
+    })
+  </script>
+
+  <!-- AnchorJS -->
+  <script src="{{ site.baseurl_root }}/assets/anchor.min.js"></script>
+  <script>
+    anchors.options.placement = 'left';
+    anchors.add('h1');
+    anchors.add();
+  </script>
+  <!-- End AnchorJS -->

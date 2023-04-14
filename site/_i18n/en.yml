@@ -1,0 +1,16 @@
+global:
+  tagline: English
+  about: About
+  search-posts: Search blog posts...
+  written-by: Written by
+  dateon: "on"
+  translated-by: and translated by
+langs:
+  en: English
+  pt: Portuguese
+pages:
+  home:
+    title: Home
+  written-by: Written by
+titles:
+  pagination: Pagination

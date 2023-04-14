@@ -1,8 +1,12 @@
 title: Hardware Hacking Brasil
 email: hhbrasil@no-valid-email
 description: Comunidade - Hardware Hacking Brasil
-baseurl: "/"
 url: "https://hardwarehacking.com.br"
+
+author:
+  name:         Lucas Teske
+  url:          https://lucasteske.dev
+  email:        hardwarehacking@nvx.li
 
 # Build settings
 theme: jekyll-theme-console
@@ -11,6 +15,27 @@ style: hacker
 markdown:       kramdown
 include:
   - _pages
+
+plugins_dir: ./_plugins
+
+
+# Multiple Languages
+languages: [ "pt", "en"]
+exclude_from_localizations: ["javascript", "images", "css", "assets"]
+
+
+# Permalinks
+permalink:      /:year/:month/:title
+paginate:       5
+
+# Excludes
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - site.conf
+  - run.sh
+  - Dockerfile
+  - vendor
 
 sass:
   sass_dir:     _sass
@@ -21,9 +46,9 @@ plugins_dir: ./_plugins
 plugins:
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+  - jekyll-multiple-languages-plugin
   - jekyll-seo-tag
   - jekyll-redirect-from
   - jekyll-spaceship
