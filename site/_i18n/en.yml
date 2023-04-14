@@ -5,6 +5,7 @@ global:
   written-by: Written by
   dateon: "on"
   translated-by: and translated by
+  contributing: Contributing
 langs:
   en: English
   pt: Portuguese
