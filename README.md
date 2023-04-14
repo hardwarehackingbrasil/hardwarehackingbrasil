@@ -1,2 +1,3 @@
-# hardwarehackingbrasil
-Site da Comunidade Hardware Hacking Brasil
+# Hardware Hacking Brasil
+
+Comunidade Hardware Hacking Brasil
