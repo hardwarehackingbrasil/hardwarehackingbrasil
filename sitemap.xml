@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://hardwarehacking.com.br/2022/09/welcome-to-jekyll</loc>
+<lastmod>2022-09-09T14:50:41+00:00</lastmod>
+</url>
+<url>
+<loc>https://hardwarehacking.com.br/about/</loc>
+</url>
+<url>
+<loc>https://hardwarehacking.com.br/contributing</loc>
+</url>
+<url>
+<loc>https://hardwarehacking.com.br/</loc>
+</url>
+</urlset>
